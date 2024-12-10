@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\DonatedTo;
+use App\Http\Controllers\AdminController;
 
 class DonatedToController extends Controller
 {
@@ -17,7 +18,7 @@ class DonatedToController extends Controller
 
     public function create()
     {
-        return view('donated_tos.create');
+        return view('admin.donated_tos.create');
     }
 
     public function store(Request $request)
@@ -32,19 +33,19 @@ class DonatedToController extends Controller
         ]);
 
         DonatedTo::create($validatedData);
-        return redirect()->route('donated_tos.index')->with('success', 'DonatedTo created successfully.');
+        return redirect()->route('admin.show_recipients')->with('success', 'DonatedTo created successfully.');
     }
 
     public function show($id)
     {
         $donatedTo = DonatedTo::findOrFail($id);
-        return view('donated_tos.show', compact('donatedTo'));
+        return view('admin.donated_tos.show', compact('donatedTo'));
     }
 
     public function edit($id)
     {
         $donatedTo = DonatedTo::findOrFail($id);
-        return view('donated_tos.edit', compact('donatedTo'));
+        return view('admin.donated_tos.edit', compact('donatedTo'));
     }
 
     public function update(Request $request, $id)
@@ -60,13 +61,13 @@ class DonatedToController extends Controller
 
         $donatedTo = DonatedTo::findOrFail($id);
         $donatedTo->update($validatedData);
-        return redirect()->route('donated_tos.index')->with('success', 'DonatedTo updated successfully.');
+        return redirect()->route('admin.show_recipients')->with('success', 'DonatedTo updated successfully.');
     }
 
     public function destroy($id)
     {
         $donatedTo = DonatedTo::findOrFail($id);
         $donatedTo->delete();
-        return redirect()->route('donated_tos.index')->with('success', 'DonatedTo deleted successfully.');
+        return redirect()->route('admin.show_recipients')->with('success', 'DonatedTo deleted successfully.');
     }
 }

@@ -4,18 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use OwenIt\Auditing\Contracts\Auditable;
 
-class Supplier extends Model
+class Supplier extends Model implements Auditable
 {
-    use HasFactory;
+    use HasFactory, \OwenIt\Auditing\Auditable;
 
     protected $fillable =[
         'name',
+        'contact_info',
         'phone_no',
         'address',
         'email',
-        'company_name',
         'website',
+        'company_name',
     ];
 
     public function ownedItems()

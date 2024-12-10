@@ -10,12 +10,12 @@ class SupplierController extends Controller
     public function index()
     {
         $suppliers = Supplier::all();
-        return view('suppliers.index', compact('suppliers'));
+        return view('admin.suppliers.index', compact('suppliers'));
     }
 
     public function create()
     {
-        return view('suppliers.create');
+        return view('admin.suppliers.create');
     }
 
     public function store(Request $request)
@@ -32,19 +32,19 @@ class SupplierController extends Controller
 
         Supplier::create($validatedData);
 
-        return redirect()->route('suppliers.index')->with('success', 'Supplier created successfully.');
+        return redirect()->route('admin.show_suppliers')->with('success', 'Supplier created successfully.');
     }
 
     public function show($id)
     {
         $supplier = Supplier::findOrFail($id);
-        return view('suppliers.show', compact('supplier'));
+        return view('admin.suppliers.show', compact('supplier'));
     }
 
     public function edit($id)
     {
         $supplier = Supplier::findOrFail($id);
-        return view('suppliers.edit', compact('supplier'));
+        return view('admin.suppliers.edit', compact('supplier'));
     }
 
     public function update(Request $request, $id)
@@ -61,7 +61,7 @@ class SupplierController extends Controller
 
         Supplier::whereId($id)->update($validatedData);
 
-        return redirect()->route('suppliers.index')->with('success', 'Supplier updated successfully.');
+        return redirect()->route('admin.show_suppliers')->with('success', 'Supplier updated successfully.');
     }
 
     public function destroy($id)
@@ -69,7 +69,7 @@ class SupplierController extends Controller
         $supplier = Supplier::findOrFail($id);
         $supplier->delete();
 
-        return redirect()->route('suppliers.index')->with('success', 'Supplier deleted successfully.');
+        return redirect()->route('admin.show_suppliers')->with('success', 'Supplier deleted successfully.');
     }
 }
 

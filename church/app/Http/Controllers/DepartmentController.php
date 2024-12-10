@@ -13,7 +13,7 @@ class DepartmentController extends Controller
     public function index()
     {
         $departments = Department::all();
-        return view('departments.index', compact('departments'));
+        return view('admin.departments.index', compact('departments'));
     }
 
     /**
@@ -21,7 +21,7 @@ class DepartmentController extends Controller
      */
     public function create()
     {
-        return view('departments.create');
+        return view('admin.departments.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class DepartmentController extends Controller
 
         Department::create($request->all());
 
-        return redirect()->route('departments.index')
+        return redirect()->route('admin.show_departments')
                          ->with('success', 'Department created successfully.');
     }
 
@@ -46,7 +46,7 @@ class DepartmentController extends Controller
     public function show(string $id)
     {
         $department = Department::findOrFail($id);
-        return view('departments.show', compact('department'));
+        return view('admin.departments.show', compact('department'));
     }
 
     /**
@@ -55,7 +55,7 @@ class DepartmentController extends Controller
     public function edit(string $id)
     {
         $department = Department::findOrFail($id);
-        return view('departments.edit', compact('department'));
+        return view('admin.departments.edit', compact('department'));
     }
 
     /**
@@ -71,7 +71,7 @@ class DepartmentController extends Controller
         $department = Department::findOrFail($id);
         $department->update($request->all());
 
-        return redirect()->route('departments.index')
+        return redirect()->route('admin.show_departments')
                          ->with('success', 'Department updated successfully.');
     }
 
@@ -83,7 +83,7 @@ class DepartmentController extends Controller
         $department = Department::findOrFail($id);
         $department->delete();
 
-        return redirect()->route('departments.index')
+        return redirect()->route('admin.show_departments')
                          ->with('success', 'Department deleted successfully.');
     }
 }

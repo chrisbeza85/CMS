@@ -1,0 +1,3432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#logincss {
+  margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.layout_padding {
+  padding: 70px 0;
+}
+
+.layout_padding2 {
+  padding: 75px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 75px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 75px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.heading_container h2 {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.heading_container h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #f7444e;
+  margin: 10px auto 10px;
+}
+
+.heading_container h2 span {
+  color: #f7444e;
+}
+
+.heading_container p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.heading_container.heading_center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.hero_area {
+  position: relative;
+  /* Position relative for absolute positioning of child elements if needed */
+  min-height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  /* Flexbox layout */
+  flex-direction: column;
+  /* Vertical stacking of child elements */
+  justify-content: center;
+  /* Center content vertically (optional) */
+  align-items: center;
+  /* Center content horizontally (optional) */
+  width: 100%;
+  /* Full width of the container */
+  box-sizing: border-box;
+  /* Ensure padding and borders are included in the element’s total width and height */
+
+}
+
+/* Optional: Media queries for better responsiveness */
+@media (max-width: 1200px) {
+  .hero_area {}
+}
+
+@media (max-width: 768px) {
+  .hero_area {}
+}
+
+@media (max-width: 480px) {
+  .hero_area {}
+}
+
+
+.sub_page .hero_area {
+  min-height: auto;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header_section {
+  padding: 0px 0;
+  background-color: #ffffff;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+. {
+  font-size: medium !important;
+}
+
+/* Hide .xs class on mobile screens and small devices */
+@media (max-width: 575.98px) {
+  .xs {
+    display: none !important;
+    /* Hide the element on screens smaller than 576px */
+  }
+}
+
+/* Ensure .xs class is visible on larger screens */
+@media (min-width: 576px) {
+  .xs {
+    display: block;
+    /* Display the element on screens larger than or equal to 576px */
+    color: white !important;
+    /* Ensure text color is white */
+    font-size: 20px;
+    /* Font size for larger screens */
+    font-family: 'Playfair Display', serif;
+    /* Font family */
+    font-weight: bold;
+    /* Font weight */
+    margin-left: 0;
+    /* Reset margin */
+    text-align: center;
+    /* Center the text */
+    position: relative;
+    /* Position context */
+  }
+}
+
+
+.fa-user-circle {
+  color: #e4af00 !important;
+  font-size: 23px !important;
+}
+
+.btn-primary {
+  color: white !important; /* Sets the text color to white */
+  background-color: transparent !important; /* Makes the background color transparent */
+  border: none; /* Removes the border */
+  font-size: 12px !important; /* Sets the font size to 12px, overriding any other font size rules */
+}
+
+.btn-primary:hover {
+  color: #e4af00 !important;
+  background-color: transparent !important;
+  border: none;
+  font-size: 12px !important;
+}
+
+.btn-success {
+  color: white !important;
+  background-color: transparent !important;
+  font-size: 12px !important;
+  margin-left: 10px;
+  border: none;
+}
+
+.btn-success:hover {
+  color: #e4af00 !important;
+  background-color: transparent !important;
+  font-size: 12px !important;
+  border: none;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 14px !important;
+}
+
+.nav-link:hover {
+  color: #e4af00 !important;
+  font-size: 14px !important;
+}
+
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+    /* Hide on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hidden-xs {
+    display: none;
+    /* Hide on extra small screens */
+  }
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+}
+
+
+/* Navbar styling */
+.custom_nav-container {
+  position: fixed;
+  /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #2c6448;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space between items */
+  align-items: center;
+  /* Center items vertically */
+}
+
+.custom_nav-container .navbar-nav {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 7px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 700;
+
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link svg {
+  width: 17px;
+  height: auto;
+  fill: #000000;
+  margin-bottom: 2px;
+
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #f7444e;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link svg,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
+  fill: #f7444e;
+}
+
+.custom_nav-container .nav_search-btn {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  color: #000000;
+
+}
+
+.custom_nav-container .nav_search-btn:hover {
+  color: #f7444e;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  transition: all 0.3s;
+  outline: none;
+
+}
+
+/* Toggler Span Styles */
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  /* Adjust width as needed */
+  height: 4px;
+  /* Height of the lines */
+  background-color: white;
+  /* Color of the lines */
+  border-radius: 5px;
+  /* Rounded corners for lines */
+  margin: 7px 0;
+  /* Space between lines */
+  transition: all 0.3s ease;
+  /* Smooth transition for animations */
+  position: relative;
+  /* Position relative for pseudo-elements */
+}
+
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  top: -10px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+  transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+  transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before,
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+/* Default: Hide the toggler on larger screens */
+.navbar-toggler {
+  display: none;
+  /* Hide by default */
+}
+
+
+/* Show toggler on smaller screens */
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    display: block;
+    /* Show on small screens */
+    position: absolute;
+    /* Absolute positioning */
+    right: 10px;
+    /* Align to the right with some spacing */
+    top: 3px !important;
+    /* Adjust top positioning */
+  }
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 575.98px) {
+  .navbar-toggler {
+    width: 37px;
+    /* Set width of the toggler button */
+    height: 37px;
+    /* Set height of the toggler button */
+    right: 10px;
+    /* Align to the right with some spacing */
+    top: 10px;
+    /* Adjust top positioning */
+  }
+
+  /* Toggler Icon on Extra Small Screens */
+  .navbar-toggler span {
+    width: 30px;
+    /* Width of the lines */
+    height: 3px;
+    /* Height of the lines */
+  }
+
+  .navbar-toggler span::before,
+  .navbar-toggler span::after {
+    height: 3px;
+    width: 30px;
+  }
+}
+
+
+/* Logo styling */
+.sda_logo8 {
+  width: 60px;
+  height: auto;
+  transition: width 0.3s;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .sda_logo8 {
+    width: 50px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sda_logo8 {
+    width: 40px;
+    left: 5px;
+  }
+}
+
+
+/* End header section */
+.slider_section {
+  flex: 1;
+  /* Flex-grow to fill available space */
+  display: flex;
+  /* Flexbox layout */
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  position: relative;
+  /* Allow absolute positioning of child elements */
+  box-sizing: border-box;
+  /* Include padding and borders in the element's total width and height */
+  width: 100%;
+  /* Full width of parent container */
+  height: auto;
+  /* Height adjusts based on content or parent container */
+  padding: 15px;
+  /* Default padding */
+  /* Default margin-top */
+}
+
+.fa-heart {
+  color: red;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .slider_section {
+    /* Adjustments for large tablets or smaller desktops */
+    padding: 45px;
+    /* Maintain padding */
+    margin-top: 20px;
+    /* Adjust margin if necessary */
+  }
+}
+
+@media (max-width: 800px) {
+  .slider_section {
+    flex-direction: column;
+    /* Stack children vertically */
+    padding: 30px;
+    /* Reduce padding for smaller screens */
+    margin-top: 30px;
+    /* Adjust margin for smaller screens */
+  }
+}
+
+@media (min-width: 700px) {
+  .slider_section {
+    flex-direction: column;
+    /* Stack children vertically */
+    padding: 60px;
+    /* Reduce padding for smaller screens */
+    margin-top: 30px;
+    /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider_section {
+    padding: 35px;
+    /* Further reduce padding for very small screens */
+    margin-top: 20px;
+    /* Further adjust margin for very small screens */
+  }
+}
+
+
+/* Styling for inner elements */
+.slider_section .row {
+  align-items: center;
+  /* Center align items */
+}
+
+.slider_section #customCarousel1 {
+  width: 100%;
+  /* Full width */
+  position: static;
+  /* Reset positioning */
+}
+
+.slider_section .detail-box h1 {
+  font-size: 4.5rem;
+  /* Default font size */
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #002c3e;
+  line-height: 70px;
+  /* Line height for spacing */
+}
+
+/* Highlighted text color */
+.slider_section .detail-box h1 span {
+  color: #f7444e;
+}
+
+/* Paragraph styling */
+.slider_section .detail-box p {
+  font-size: 16px;
+  margin: 20px 0 1.5rem;
+}
+
+/* Button styling */
+.slider_section .detail-box a {
+  display: inline-block;
+  padding: 12px 45px;
+  background-color: #f7444e;
+  border: 1px solid #f7444e;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+  margin-top: 60px;
+  font-weight: 700;
+}
+
+/* Button hover state */
+.slider_section .detail-box a:hover {
+  background-color: transparent;
+  color: #f7444e;
+}
+
+/* Image styling */
+.slider_section .img-box img {
+  width: 100%;
+  /* Full width of container */
+}
+
+/* Carousel indicators */
+.slider_section .carousel-indicators {
+  position: static;
+  /* Reset positioning */
+  margin: 0;
+  margin-top: 45px;
+  display: flex;
+  /* Ensure indicators align properly */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider_section .carousel-indicators li {
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.slider_section .carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  background-color: #f7444e;
+}
+
+/* Background box styling */
+.slider_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  /* Hide overflow */
+}
+
+.slider_bg_box img {
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  object-fit: cover;
+  /* Maintain aspect ratio */
+  object-position: top right;
+  /* Position image from the top right */
+  display: block;
+  /* Remove extra space below the image */
+}
+
+/* Media queries for responsive background box */
+@media (max-width: 1200px) {
+  .slider_bg_box {
+    /* Adjustments for large tablets or smaller desktops */
+  }
+}
+
+@media (max-width: 868px) {
+  .slider_bg_box {
+    /* Adjustments for tablets and smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider_bg_box {
+    margin-top: 10px;
+    /* Adjust margin for very small screens */
+  }
+}
+
+@media (min-width: 780px) {
+  .slider_bg_box {
+    margin-top: 10px;
+    /* Consistent margin for screens larger than 780px */
+  }
+}
+
+@media (min-width: 1568px) {
+  .slider_bg_box {
+    margin-top: 20px;
+    /* Adjust margin for larger screens */
+  }
+}
+
+
+/* footer section*/
+.footer_section {
+  background-color: #002c3e;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.footer_section {
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer_section h4 {
+  font-size: 28px;
+}
+
+.footer_section h4,
+.footer_section .footer-logo {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+}
+
+.footer_section .footer-col {
+  margin-bottom: 30px;
+}
+
+.footer_section .footer_contact .contact_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer_section .footer_contact .contact_link_box a {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.footer_section .footer_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+
+.footer_section .footer_contact .contact_link_box a:hover {
+  color: #f7444e;
+}
+
+.footer_section .footer-logo {
+  display: block;
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.footer_section .footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: center;
+  justify-content: left;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.footer_section .footer_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #002c3e;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0 2.5px;
+  font-size: 18px;
+}
+
+.footer_section .footer_social a:hover {
+  color: #f7444e;
+}
+
+.footer_section .map_container {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.footer_section .map_container .map {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.footer_section .map_container .map #googleMap {
+  height: 100%;
+}
+
+.footer_section .footer-info {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer_section .footer-info p {
+  color: #ffffff;
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer_section .footer-info p a {
+  color: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.heading_container.heading_center h3 {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+li.nav-item ul {
+  background: #fff;
+  border: solid #000 2px;
+  border-radius: 0;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 0px 0 #000;
+  width: 190px;
+}
+
+li.nav-item ul li {
+  float: left;
+  width: 100%;
+  margin: 6px 0;
+}
+
+li.nav-item ul li a {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-top: 10px;
+  transition: ease all 0.5s;
+}
+
+li.nav-item ul li a:hover,
+li.nav-item ul li a:focus {
+  color: #f7444e;
+}
+
+.inner_page_head {
+  background: #f7444e;
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.inner_page_head h3 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+/** footer **/
+
+footer {
+  background: #f8f8f8;
+  padding: 90px 0 70px;
+}
+
+.logo_footer {
+  margin-bottom: 30px;
+}
+
+.information_f p {
+  margin-bottom: 1.2rem;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.widget_menu h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-bottom: 25px;
+}
+
+.widget_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.widget_menu ul li {
+  float: left;
+  width: 100%;
+}
+
+.widget_menu ul li a {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 0;
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.field {
+  display: flex;
+}
+
+.widget_menu {
+  float: left;
+  width: 100%;
+}
+
+div.form_sub .field input[type="email"],
+div.form_sub .field input[type="email"]:hover,
+div.form_sub .field input[type="email"]:focus {
+  padding: 10px 110px 10px 15px;
+  border-radius: 0;
+  border: solid #ccc 1px;
+  font-size: 14px;
+  position: relative;
+  box-shadow: none;
+  width: 100%;
+  height: 48px;
+}
+
+
+/* Footer Styling */
+.cpy_ {
+  display: flex;
+  flex-direction: column;
+  /* Stack items vertically */
+  align-items: flex-start;
+  /* Align items to the left */
+  padding: 20px;
+  background-color: #f8f9fa;
+  /* Light background color for footer */
+  border-top: 1px solid #e0e0e0;
+  /* Light border on top */
+}
+
+.cpy_ h6 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.cpy_ .rights {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+  /* Align social media icons to the right */
+  width: 100%;
+}
+
+/* Center the social media icons on mobile screens */
+@media (max-width: 768px) {
+  .social-media {
+    justify-content: center;
+    /* Center icons on mobile screens */
+  }
+}
+
+.social-icon {
+  color: #333;
+  /* Icon color */
+  font-size: 18px;
+  /* Adjust icon size */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+.social-icon {
+  color: #333;
+  /* Icon color */
+  font-size: 28px;
+  /* Adjust icon size */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+.social-icon:hover {
+  color: #007bff;
+  /* Change color on hover */
+}
+
+
+/* Default styles for larger screens */
+.pray {
+  width: 100% !important;
+  margin-left: -10px;
+}
+
+/* Styles for screens smaller than 600px (mobile devices) */
+@media only screen and (max-width: 600px) {
+  .pray {
+    width: 90% !important;
+    /* Adjust width to be more suitable for mobile */
+    margin-left: 0;
+    /* Reset margin for better alignment on mobile */
+    margin-top: 10px;
+    /* Add some space at the top */
+  }
+}
+
+.heading_container {
+  margin-top: -65%;
+  margin-left: 125px;
+}
+
+.cpy_ p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.university {
+  color: #007bff !important;
+}
+
+.cpy_ p a {
+  margin: 0;
+  color: #f7444e;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mx-auto {
+  color: #ffffff !important;
+}
+
+.fa-user-plus {
+  color: #e4af00;
+  font-size: 20px !important;
+
+}
+
+.rights {
+  color: #000 !important;
+}
+
+.detail-box {
+  text-align: center;
+  /* Center align text inside .detail-box */
+}
+
+.slidetext {
+  color: #2c6448 !important;
+  font-size: 3rem !important;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.slidetext1 {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Button Group Wrapper */
+.button-group-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center the items horizontally */
+  margin-top: 1rem;
+  /* Add margin above the button group */
+}
+
+/* Button Box */
+.btn-box {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  width: 100%;
+  /* Ensure full-width alignment within the container */
+}
+
+.btn-box a {
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .btn-box {
+    width: auto;
+    /* Allow the button to size based on content */
+  }
+}
+
+
+
+
+
+
+
+/* Button Styles */
+.btn-box {
+  text-align: center;
+}
+
+/* Change button background on hover */
+.btn3:hover {
+  background-color: green !important;
+  /* Darker background on hover */
+}
+
+/* Container styling */
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
+  /* Center buttons horizontally */
+  gap: 10px;
+  /* Gap between buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-box {
+    flex-direction: column;
+    /* Stack buttons vertically on small screens */
+    align-items: center;
+    /* Center buttons horizontally */
+  }
+
+}
+
+
+/* Centering and styling the text header */
+.text-section_header3 {
+  font-size: 25px !important;
+  font-weight: bolder !important;
+  color: #000 !important;
+  text-align: center;
+  /* Center-align text */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  margin: 0 auto;
+  /* Center the element within its container */
+  line-height: 1.2;
+  /* Improve readability */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 992px) {
+  .text-section_header3 {
+    font-size: 28px;
+    /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .text-section_header3 {
+    font-size: 22px;
+    /* Adjust font size for mobile screens */
+    margin-top: -60px;
+  }
+}
+
+/* Centering and styling the text header */
+.text-section_header {
+  font-size: 38px !important;
+  font-weight: bold;
+  text-align: center;
+  /* Center-align text */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  margin: 0 auto;
+  /* Center the element within its container */
+  line-height: 1.2;
+  /* Improve readability */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 992px) {
+  .text-section_header {
+    font-size: 28px;
+    /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .text-section_header {
+    font-size: 22px;
+    /* Adjust font size for mobile screens */
+    margin-top: -60px;
+  }
+}
+
+/* Centering and styling the text header */
+.text-section_header1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: right;
+  /* Center-align text */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  margin: 0 auto;
+  /* Center the element within its container */
+  line-height: 1.2;
+  /* Improve readability */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 992px) {
+  .text-section_header1 {
+    font-size: 28px;
+    /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .text-section_header1 {
+    font-size: 22px;
+    /* Adjust font size for mobile screens */
+  }
+}
+
+
+
+/* Optional: Responsive adjustments */
+@media (max-width: 992px) {
+  .text-paragraph_large1 {
+    font-size: 28px;
+    /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .text-paragraph_large1 {
+    font-size: 22px;
+    /* Adjust font size for mobile screens */
+  }
+}
+
+
+/* Default styles for .rich-text */
+.rich-text {
+  font-size: 35px;
+  /* Default font size */
+  font-weight: bold;
+  text-align: left;
+  /* Align text to the left */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  width: 100%;
+  /* Full width of its parent container */
+  margin: 0 auto;
+  /* Center the element within its container */
+  line-height: 1.2;
+  /* Improve readability */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  width: 300px !important;
+  max-width: 300px !important;
+  margin-left: -50px;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 0 15px;
+  /* Add some padding for better spacing */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 575.98px) {
+  .rich-text {
+    font-size: 1.2rem !important;
+    /* Smaller font size for small screens */
+    width: 100%;
+    /* Full width for small screens */
+    margin: 0;
+    /* Remove margin adjustments */
+    margin-top: -5px !important;
+    padding: 0 10px;
+    /* Add some padding for better spacing */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .rich-text {
+    font-size: 28px;
+    /* Slightly larger font size for medium screens */
+    width: 100%;
+    /* Full width for medium screens */
+    margin: 0;
+    /* Remove margin adjustments */
+    padding: 0 15px;
+    /* Add padding for spacing */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .rich-text {
+    font-size: 32px;
+    /* Larger font size for large screens */
+    width: 100%;
+    /* Full width for large screens */
+    margin: 0;
+    /* Remove margin adjustments */
+    padding: 0 20px;
+    /* Add padding for spacing */
+  }
+}
+
+/* Optional: Adjustments for extra large screens if needed */
+@media (min-width: 992px) {
+  .rich-text {
+    font-size: 35px;
+    /* Default font size or slightly adjusted for extra large screens */
+    width: 100%;
+    /* Full width for extra large screens */
+    margin: 0;
+    /* Remove margin adjustments */
+    padding: 0 25px;
+    /* Add padding for spacing */
+  }
+}
+
+
+/* Optional: Responsive adjustments */
+@media (max-width: 992px) {
+  .text-section_header1 {
+    font-size: 28px;
+    /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .text-section_header1 {
+    font-size: 22px;
+    /* Adjust font size for mobile screens */
+  }
+}
+
+/* Styling for the text-area */
+.text-area3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f1f1f1;
+  color: #000000;
+  padding: 75.8px !important;
+  max-width: 100%;
+  margin-top: -20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 575.98px) {
+  .text-area3 {
+    padding: 15px;
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .text-area3 {
+    padding: 55px;
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .text-area3 {
+    padding: 55px;
+  }
+}
+
+/* Styling for the text-area */
+.text-area7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  /* Background color */
+  color: #000000;
+  /* Text color */
+  padding: 70px !important;
+  /* Padding inside the block */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  width: 100%;
+  /* Full width of its parent */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  height: 100%;
+  /* Ensure it takes full height of the column */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 575.98px) {
+  .section1 {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .text-area7 {
+    padding: 15px;
+    /* Reduce padding for smaller screens */
+  }
+}
+
+/* Responsive adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 1767.98px) {
+  .section1 {
+    padding: 15px;
+    /* Adjust padding for medium screens */
+  }
+
+  .text-area7 {
+    padding: 55px;
+    /* Default padding for medium screens */
+  }
+}
+
+/* Responsive adjustments for large screens */
+@media (min-width: 768px) {
+  .section1 {
+    padding: 20px;
+    /* Default padding for larger screens */
+  }
+
+  .text-area7 {
+    padding: 55px;
+    /* Increase padding for larger screens */
+  }
+}
+
+/* Responsive adjustments for large screens */
+@media (max-width: 1268px) {
+  .section1 {
+    padding: 20px !important;
+    /* Default padding for larger screens */
+  }
+
+  .text-area7 {
+    padding: 55px !important;
+    /* Increase padding for larger screens */
+  }
+}
+
+
+/* Styling for the text-area */
+.text-area4 {
+  display: flex;
+  flex-direction: column;
+  /* Stack text elements vertically */
+  align-items: center;
+  /* Center horizontally */
+  text-align: center;
+  /* Center text inside */
+  background-color: rgb(219, 106, 0);
+  /* Background color */
+  color: #000000;
+  /* Text color */
+  padding: 20px;
+  /* Padding inside the block */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  width: 100%;
+  /* Full width of its parent */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 575.98px) {
+  .text-area4 {
+    padding: 15px;
+
+    /* Reduce padding for smaller screens */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .text-area4 {
+    padding: 55px;
+    /* Default padding for medium screens */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .text-area4 {
+    padding: 55px;
+    /* Increase padding for larger screens */
+  }
+}
+
+/* Optional: Adjustments for extra large screens if needed */
+@media (min-width: 992px) {
+  .text-area3 {
+    padding: 50px;
+    /* Increase padding for extra large screens */
+  }
+}
+
+
+/* Default styles for .heading3 */
+.heading3 {
+  margin-bottom: 1rem;
+  /* Space below the heading */
+  margin-top: 0;
+  /* No space above the heading */
+  width: 100%;
+  /* Full width for responsiveness */
+  max-width: 100%;
+  /* Ensure it doesn't exceed container width */
+  font-size: 2rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  /* Center-align text for better readability */
+  box-sizing: border-box;
+  /* Include padding and border in width calculations */
+}
+
+/* Default styles for .heading4 */
+.heading4 {
+  margin-top: -12px !important;
+  /* Space below the heading */
+  margin-top: 0;
+  /* No space above the heading */
+  width: 100%;
+  /* Full width for responsiveness */
+  max-width: 100%;
+  /* Ensure it doesn't exceed container width */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  /* Center-align text for better readability */
+  box-sizing: border-box;
+  /* Include padding and border in width calculations */
+}
+
+/* Default styles for .heading4 */
+.heading6 {
+  margin-top: 17px !important;
+  /* Space below the heading */
+  margin-top: 0;
+  /* No space above the heading */
+  width: 100%;
+  /* Full width for responsiveness */
+  max-width: 100%;
+  /* Ensure it doesn't exceed container width */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  /* Center-align text for better readability */
+  box-sizing: border-box;
+  /* Include padding and border in width calculations */
+  color: white !important;
+}
+
+/* Default styles for .heading4 */
+.heading7 {
+  margin-top: -12px !important;
+  /* Space below the heading */
+  margin-top: 0;
+  /* No space above the heading */
+  width: 100%;
+  /* Full width for responsiveness */
+  max-width: 100%;
+  /* Ensure it doesn't exceed container width */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  /* Center-align text for better readability */
+  box-sizing: border-box;
+  /* Include padding and border in width calculations */
+  color: white !important;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 575.98px) {
+  .heading3 {
+    font-size: 1.5rem;
+    /* Smaller font size for small screens */
+  }
+
+  .heading4 {
+    font-size: 1.2rem;
+    /* Smaller font size for small screens */
+    margin-left: 0;
+    /* Reset margin adjustments */
+    margin-top: -10px !important;
+  }
+
+  .heading6 {
+    font-size: 1.2rem;
+    /* Smaller font size for small screens */
+    margin-left: 0;
+    /* Reset margin adjustments */
+    margin-top: -10px !important;
+    padding-top: 15px;
+  }
+
+
+  .heading7 {
+    font-size: 1.2rem;
+    /* Smaller font size for small screens */
+    margin-left: 0;
+    /* Reset margin adjustments */
+    margin-top: 12px !important;
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heading3 {
+    font-size: 1.75rem;
+    /* Adjust font size for medium screens */
+  }
+
+  .heading4 {
+    font-size: 1.4rem;
+    /* Adjust font size for medium screens */
+    margin-top: -5px !important;
+  }
+
+  .heading6 {
+    font-size: 1.4rem;
+    /* Adjust font size for medium screens */
+    margin-top: -5px !important;
+  }
+
+  .heading7 {
+    font-size: 1.4rem;
+    /* Adjust font size for medium screens */
+    margin-top: -5px !important;
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .heading3 {
+    font-size: 2rem;
+    /* Default font size for large screens */
+  }
+
+  .heading4 {
+    font-size: 1.6rem;
+    /* Default font size for large screens */
+  }
+
+  .heading6 {
+    font-size: 1.6rem;
+    /* Default font size for large screens */
+  }
+
+  .heading7 {
+    font-size: 1.6rem;
+    /* Default font size for large screens */
+  }
+}
+
+/* Optional: Adjustments for extra large screens if needed */
+@media (min-width: 992px) {
+  .heading3 {
+    font-size: 2.25rem;
+    /* Larger font size for extra large screens */
+  }
+
+  .heading4 {
+    font-size: 1.8rem;
+    /* Larger font size for extra large screens */
+  }
+
+  .heading6 {
+    font-size: 1.8rem;
+    /* Larger font size for extra large screens */
+  }
+
+  .heading7 {
+    font-size: 1.8rem;
+    /* Larger font size for extra large screens */
+  }
+}
+
+
+.rich-text3 p {
+  margin-bottom: 1rem;
+  /* Adjust spacing below paragraph */
+}
+
+/* General styling for .rich-text3 */
+.rich-text3 {
+  margin-bottom: 25px !important;
+  /* Default margin bottom */
+  color: rgb(77, 77, 77) !important;
+}
+
+/* Responsive adjustments for tablets and smaller desktops */
+@media (max-width: 768px) {
+  .rich-text3 {
+    margin-bottom: 12px !important;
+    /* Reduce margin bottom on tablets */
+  }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 576px) {
+  .rich-text3 {
+    margin-bottom: 10px !important;
+    /* Further reduce margin bottom on mobile phones */
+  }
+}
+
+.rich-text5 p {
+  margin-bottom: 1rem;
+  /* Adjust spacing below paragraph */
+}
+
+/* General styling for .rich-text3 */
+.rich-text5 {
+  margin-bottom: 25px !important;
+  /* Default margin bottom */
+  color: white !important;
+  padding-top: 19px;
+  font-size: large !important;
+}
+
+/* Responsive adjustments for tablets and smaller desktops */
+@media (max-width: 768px) {
+  .rich-text5 {
+    margin-bottom: 12px !important;
+    /* Reduce margin bottom on tablets */
+  }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 576px) {
+  .rich-text5 {
+    margin-bottom: 10px !important;
+    /* Further reduce margin bottom on mobile phones */
+  }
+}
+
+/* Default styles for .heading3 */
+.heading5 {
+  margin-bottom: 1rem;
+  /* Space below the heading */
+  margin-top: 0;
+  color: white !important;
+  /* No space above the heading */
+  width: 100%;
+  /* Full width for responsiveness */
+  max-width: 100%;
+  /* Ensure it doesn't exceed container width */
+  font-size: 28px !important;
+  /* Adjust font size as needed */
+  text-align: center;
+  /* Center-align text for better readability */
+  box-sizing: border-box;
+  /* Include padding and border in width calculations */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 575.98px) {
+  .heading5 {
+    font-size: 1.5rem;
+    /* Smaller font size for small screens */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heading5 {
+    font-size: 1.75rem;
+    /* Adjust font size for medium screens */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .heading5 {
+    font-size: 2rem;
+    /* Default font size for large screens */
+  }
+}
+
+/* Optional: Adjustments for extra large screens if needed */
+@media (min-width: 992px) {
+  .heading5 {
+    font-size: 2.25rem;
+    /* Larger font size for extra large screens */
+  }
+}
+
+
+.rich-text4 p {
+  margin-bottom: 1rem;
+  /* Adjust spacing below paragraph */
+}
+
+/* General styling for .rich-text3 */
+.rich-text4 {
+  margin-bottom: 25px !important;
+  /* Default margin bottom */
+  color: rgb(77, 77, 77) !important;
+}
+
+/* Responsive adjustments for tablets and smaller desktops */
+@media (max-width: 768px) {
+  .rich-text4 {
+    margin-bottom: 12px !important;
+    /* Reduce margin bottom on tablets */
+  }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 576px) {
+  .rich-text4 {
+    margin-bottom: 10px !important;
+    /* Further reduce margin bottom on mobile phones */
+  }
+}
+
+/* Button styling */
+.btn-box3 {
+  margin-top: 1rem;
+  /* Add margin above button */
+}
+
+.btn3 {
+  background-color: #2c6448 !important;
+  /* Example background color */
+  color: white !important;
+  width: auto;
+  padding: 10px 35px;
+  border-radius: 30px !important;
+  border-color: white !important;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.btn3 i {
+  margin-right: 8px;
+  /* Space between icon and text */
+}
+
+.btn7 {
+  background-color: #ffffff !important;
+  /* Example background color */
+  color: rgb(0, 0, 0) !important;
+  padding: 10px 20px;
+  border-radius: 30px !important;
+  margin-top: 1px;
+  border-color: white !important;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1.2rem;
+  align-items: center;
+  /* Center content vertically */
+}
+
+/* Icon styling */
+.btn7 i {
+  margin-right: 8px;
+  /* Space between icon and text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .btn7 {
+    padding: 8px 16px;
+    /* Adjust padding for smaller screens */
+    font-size: 1rem;
+    /* Smaller font size */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn7 {
+    padding: 6px 12px;
+    /* Further adjust padding */
+    font-size: 0.9rem;
+    /* Even smaller font size */
+    border-radius: 25px !important;
+    /* Smaller border radius */
+  }
+}
+
+.btn7:hover {
+  background-color: rgb(233, 233, 233) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styling */
+.btn-box4 {
+  margin-top: 1rem;
+  /* Add margin above button */
+}
+
+.btn4 {
+  background-color: transparent !important;
+  /* Example background color */
+  color: rgb(0, 0, 0) !important;
+  padding: 7px 20px;
+  border-radius: 30px !important;
+  border: 2px solid black !important;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.btn4:hover {
+  color: #464646 !important;
+  /* Change text color to gray */
+  border: 2px solid #353535 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Box shadow: offset-x, offset-y, blur-radius, color */
+}
+
+
+.btn4 i {
+  margin-right: 8px;
+  /* Space between icon and text */
+}
+
+/* Button Container Styling */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Gap between buttons */
+  justify-content: center; /* Center buttons in container */
+}
+
+/* Button Styling */
+.btn1, .btn5 {
+  background-color: #2c6448 !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  border: 2px solid white !important;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px !important; /* Larger font size */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Button Styling */
+.btn5 {
+  background-color: #e4af00 !important;
+  color: #2c6448 !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  border: 2px solid white !important;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px !important; /* Larger font size */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Button Hover Styling */
+.btn1:hover, .btn5:hover {
+  background-color: green !important;
+  color: #ffffff !important;
+  border-color: white !important;
+}
+
+/* Button Hover Styling */
+.btn5:hover {
+  background-color: orange !important;
+  color: #ffffff !important;
+  border-color: white !important;
+}
+
+/* Responsive Styling */
+
+/* For mobile devices (max-width: 575px) */
+@media (max-width: 575px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons in column */
+  }
+  
+  .btn1, .btn5 {
+    width: 100% !important; /* Full width on smaller screens */
+    padding: 10px 20px !important; /* Standard padding */
+  }
+}
+
+/* For mobile devices (max-width: 575px) */
+@media (min-width: 404px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons in column */
+  }
+  
+  .btn1, .btn5 {
+    width: 100% !important; /* Full width on smaller screens */
+    padding: 15px 28px !important; /* Standard padding */
+  }
+}
+
+/* For tablets and small desktops (min-width: 576px) */
+@media (min-width: 576px) {
+  .button-container {
+    flex-direction: row; /* Align buttons side by side */
+  }
+  
+  .btn1, .btn5 {
+    width: auto !important; /* Auto width for larger screens */
+    padding: 12px 25px !important; /* Increased padding */
+  }
+}
+
+/* For tablets and small desktops (min-width: 768px) */
+@media (min-width: 768px) {
+  .btn1, .btn5 {
+    padding: 15px 30px !important; /* Further increased padding */
+  }
+}
+
+/* For larger desktops (min-width: 992px) */
+@media (min-width: 992px) {
+  .btn1, .btn5 {
+    padding: 15px 40px !important; /* Further increased padding */
+  }
+}
+
+/* For very large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .btn1, .btn5 {
+    padding: 15px 50px !important; /* Adjust padding for very large screens */
+  }
+}
+
+
+
+.btn2 {
+  background-color: #2c6448 !important;
+  /* Example background color */
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 30px !important;
+  border-color: white !important;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.btn2:hover {
+  background-color: #e4af00 !important;
+  /* Example background color */
+  color: #2c6448 !important;
+  padding: 10px 20px;
+  border-radius: 30px !important;
+  border-color: white !important;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Ensure the image fits the container while maintaining aspect ratio */
+.img-fluid {
+  max-width: 100%;
+  /* Ensures the image does not exceed the container's width */
+  height: 100%;
+  /* Maintains the aspect ratio */
+  width: 100%;
+  /* Ensures the image scales to fill its container */
+  display: block;
+  /* Removes any default inline spacing or gaps */
+}
+
+/* Styling for section1 */
+.section1 {
+  background-color: transparent;
+  /* Sets the background color */
+  margin-top: 20px;
+  /* Adds margin at the top */
+  box-sizing: border-box;
+  /* Ensures padding is included in the section's total width and height */
+  display: flex;
+  /* Ensure the section uses flexbox */
+  align-items: stretch;
+  /* Ensure children stretch to the same height */
+}
+
+/* Ensure the container of the image fills its parent */
+.arrival_bg_box {
+  display: flex;
+  /* Use flex to align items */
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  height: 100%;
+  /* Ensure it takes full height of the column */
+  margin-top: 12px;
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+}
+
+/* Ensure equal height for columns */
+.row {
+  display: flex;
+  /* Use flex to align items horizontally */
+  width: 100%;
+  /* Ensure it spans the full width */
+}
+
+.col-md-6 {
+  display: flex;
+  flex: 1;
+  /* Ensure each column takes up equal space */
+  align-items: stretch;
+  /* Make sure children of column are stretched to full height */
+}
+
+/* Styling for the text-area */
+.text-area7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  /* Background color */
+  color: #000000;
+  /* Text color */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  width: auto;
+  /* Full width of its parent */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  height: auto;
+  /* Ensure it takes full height of the column */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 575.98px) {
+  .section1 {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .text-area7 {
+    padding: 15px;
+    /* Reduce padding for smaller screens */
+  }
+}
+
+/* Responsive adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .section1 {
+    padding: 15px;
+    /* Adjust padding for medium screens */
+  }
+
+  .text-area7 {
+    padding: 55px;
+    /* Default padding for medium screens */
+  }
+}
+
+/* Responsive adjustments for large screens */
+@media (min-width: 768px) {
+  .section1 {
+    padding: 20px;
+    /* Default padding for larger screens */
+  }
+
+  .text-area7 {
+    padding: 55px;
+    /* Increase padding for larger screens */
+  }
+}
+
+/* Additional adjustments for specific screen size */
+@media (max-width: 1268px) {
+  .text-area7 {
+    padding: 4.2px !important;
+    /* Increase padding for specific larger screens */
+  }
+}
+
+
+
+
+/* Ensure the image does not exceed its container's width and height */
+.img-fluid1 {
+  max-width: 100%;
+  /* Ensures the image does not exceed its container's width */
+  height: auto;
+  /* Maintains the aspect ratio of the image */
+  width: 100%;
+  /* Allows the width to adjust automatically */
+  display: block;
+  /* Remove any extra space below the image */
+}
+
+/* Optional: Add media queries for further responsiveness */
+@media (max-width: 1200px) {
+  .img-fluid1 {
+    max-height: 80vh;
+    /* Adjust height to be more responsive */
+    /* Optional: Limit height to viewport height to ensure better fit */
+    margin-left: 0;
+    /* Avoid negative margins */
+  }
+}
+
+@media (max-width: 580px) {
+  .img-fluid1 {
+    max-height: 70vh;
+    /* Further adjust height for mobile devices */
+    /* Optional: Reduce height for very small screens */
+    margin-left: 0;
+    /* Avoid negative margins */
+  }
+}
+
+
+
+/* Container to Center the Box */
+.container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically, if needed */
+  width: 100%;
+  /* Full width of the viewport or parent container */
+  height: 100%;
+  /* Full height of the viewport or parent container */
+  padding: 0 15px;
+  /* Optional: Add padding for small screen adjustments */
+}
+
+.arrival_bg_box::before {
+  content: "";
+  /* Empty content to create the pseudo-element */
+  position: absolute;
+  /* Position it absolutely to cover the box */
+  top: 0;
+  left: 0;
+  width: 1090%;
+  height: 100%;
+  /* Default gradient from right to left */
+  margin-left: -10px;
+  pointer-events: none;
+  /* Ensure it doesn’t interfere with interactions */
+}
+
+/* Gradient effect for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .arrival_bg_box::before {
+    background: linear-gradient(to top, rgba(255, 255, 255, 2), rgba(255, 255, 255, 0));
+    /* Gradient from bottom to top */
+  }
+}
+
+@media (max-width: 992px) {
+  .arrival_bg_box::before {
+    background: linear-gradient(to top, rgba(255, 255, 255, 2), rgba(255, 255, 255, 0));
+    /* Gradient from bottom to top */
+  }
+}
+
+.arrival_bg_box img {
+  display: block;
+  /* Ensure image displays as a block element */
+  max-width: 100%;
+  /* Ensure the image fits within the container */
+  height: auto;
+  margin-left: 0;
+  align-items: center;
+  /* Maintain aspect ratio */
+}
+
+/* Default styles for container-wrapper */
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 9px;
+  margin-top: 25px;
+  gap: 15px;
+  width: 98%;
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}
+
+/* Adjustments for tablets and smaller desktops */
+@media (max-width: 768px) {
+  .container-wrapper {
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 10px;
+    /* Adjusted margin-top for better spacing */
+    gap: 15px;
+    /* Maintain consistent gap */
+  }
+}
+
+/* Adjustments for very small screens (phones) */
+@media (max-width: 480px) {
+  .container-wrapper {
+    margin-left: 12px;
+    margin-top: 10px;
+    /* Adjusted margin-top for smaller screens */
+    gap: 10px;
+    /* Reduced gap for very small screens */
+  }
+}
+
+
+/* Container1 Styles */
+.container1 {
+  flex: 1 1 calc(50% - 15px);
+  /* Two containers per row on medium screens */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Default shadow */
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+  /* Hide overflow to keep the effect contained */
+  margin: 0;
+  margin-top: -50px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  /* Smooth shadow transition */
+  position: relative;
+  /* Ensure pseudo-elements align correctly */
+}
+
+
+/* Container1 Styles */
+/* Full-width container styling */
+.container3 {
+  background-color: transparent;
+  /* Background color */
+  box-sizing: border-box;
+  /* Include padding and border in the width and height */
+  overflow: hidden;
+  /* Hide overflow to keep the effect contained */
+  margin: 0;
+  /* Remove default margin */
+  width: 100%;
+  /* Full width of its parent */
+  position: relative;
+  /* Ensure pseudo-elements align correctly */
+}
+
+/* Container1 Styles */
+.container2 {
+  flex: 1 1 calc(50% - 15px);
+  /* Two containers per row on medium screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Default shadow */
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: show;
+  background-color: #2c6448;
+  /* Hide overflow to keep the effect contained */
+  margin: 0;
+  margin-top: -24px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  /* Smooth shadow transition */
+  position: relative;
+  /* Ensure pseudo-elements align correctly */
+}
+
+
+/* Arrival Background Box */
+.arrival_bg_box1 {
+  position: relative;
+  /* Ensure the pseudo-element is positioned correctly */
+  width: 100%;
+  border-radius: 6px;
+  /* Full width of its parent */
+  height: auto;
+  margin-left: -2px;
+  /* Removed margin-left to avoid potential overflow */
+  margin-right: 0;
+  /* Added margin-right for consistency */
+  overflow: hidden;
+  /* Hide overflow to keep the effect contained */
+}
+
+/* Pseudo-element for overlay effect */
+.arrival_bg_box1::before {
+  content: "";
+  /* Empty content to create the pseudo-element */
+  position: absolute;
+  /* Position it absolutely to cover the box */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Example gradient */
+  pointer-events: none;
+  /* Ensure it doesn’t interfere with interactions */
+}
+
+/* Styling for the image */
+.arrival_bg_box1 img {
+  display: block;
+  /* Ensure image displays as a block element */
+  width: 100%;
+  /* Ensure the image fits within the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Ensure image covers the container properly */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 595.98px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    flex: 1 1 100%;
+    margin: 0;
+    /* Reset margins to prevent overflow */
+    max-width: 100%;
+  }
+
+  .arrival_bg_box1::before {
+    /* Slightly stronger gradient */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 476px) and (max-width: 1067.98px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0;
+    /* Reset margins to prevent overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+
+  .arrival_bg_box1 {
+    border-radius: 6px;
+    /* Border-radius for medium screens */
+  }
+
+  .arrival_bg_box1::before {
+
+    /* Medium gradient */
+  }
+}
+
+/* Adjustments for smaller medium screens */
+@media (min-width: 406px) and (max-width: 1067.98px) {
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0;
+    /* Reset margins to prevent overflow */
+    width: 100%;
+    /* Ensure full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on larger screens */
+  }
+
+  .arrival_bg_box1 {
+    border-radius: 8px;
+    /* Default border-radius for larger screens */
+  }
+
+  .arrival_bg_box1::before {
+
+    /* Default gradient */
+  }
+}
+
+
+/* Arrival Background Box */
+.arrival_bg_box4 {
+  position: relative;
+  /* Ensure the pseudo-element is positioned correctly */
+  width: 100%;
+  /* Full width of its parent */
+  height: auto;
+  margin-left: 20px;
+  /* Removed margin-left to avoid potential overflow */
+  margin-right: 0;
+  /* Added margin-right for consistency */
+  overflow: hidden;
+  /* Hide overflow to keep the effect contained */
+}
+
+/* Pseudo-element for overlay effect */
+.arrival_bg_box4::before {
+  content: "";
+  /* Empty content to create the pseudo-element */
+  position: absolute;
+  /* Position it absolutely to cover the box */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Example gradient */
+  pointer-events: none;
+  /* Ensure it doesn’t interfere with interactions */
+}
+
+/* Styling for the image */
+.arrival_bg_box4 img {
+  display: block;
+  /* Ensure image displays as a block element */
+  width: 100%;
+  /* Ensure the image fits within the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Ensure image covers the container properly */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 595.98px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    flex: 1 1 100%;
+    margin: 0;
+    /* Reset margins to prevent overflow */
+    max-width: 100%;
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 476px) and (max-width: 1067.98px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0;
+    /* Reset margins to prevent overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+}
+
+/* Adjustments for smaller medium screens */
+@media (min-width: 406px) and (max-width: 1067.98px) {
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0;
+    /* Reset margins to prevent overflow */
+    width: 100%;
+    /* Ensure full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on larger screens */
+  }
+
+}
+
+
+
+
+/* Arrival Background Box */
+.arrival_bg_box2 {
+  position: relative;
+  /* Ensure the pseudo-element is positioned correctly */
+  width: 78%;
+  border-radius: 6px;
+  /* Full width of its parent */
+  height: 400px;
+  margin-left: -2px;
+  /* Height adjusts based on content or aspect ratio */
+  overflow: hidden;
+  /* Hide overflow to keep the effect contained */
+  margin-top: 30px;
+}
+
+/* Pseudo-element for overlay effect */
+.arrival_bg_box2::before {
+  content: "";
+  /* Empty content to create the pseudo-element */
+  position: absolute;
+  /* Position it absolutely to cover the box */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Example gradient */
+  pointer-events: none;
+  /* Ensure it doesn’t interfere with interactions */
+}
+
+/* Styling for the image */
+.arrival_bg_box2 img {
+  display: block;
+  /* Ensure image displays as a block element */
+  width: 100%;
+  /* Ensure the image fits within the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Ensure image covers the container properly */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 575.98px) {
+  .container1 {
+    flex: 1 1 100%;
+    margin-left: -8px;
+    /* Full width on mobile view */
+    max-width: 100%;
+    /* Ensure full width on mobile */
+  }
+
+  .container3 {
+    flex: 1 1 100%;
+    margin-left: -8px;
+    /* Full width on mobile view */
+    max-width: 100%;
+    /* Ensure full width on mobile */
+  }
+
+  .container2 {
+    flex: 1 1 100%;
+    margin-left: -8px;
+    /* Full width on mobile view */
+    max-width: 100%;
+    /* Ensure full width on mobile */
+  }
+
+  .arrival_bg_box2::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    /* Slightly stronger gradient */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container1 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on medium screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on medium screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+
+  .container2 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on medium screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+
+  .arrival_bg_box2 {
+    border-radius: 6px;
+    /* Slightly larger border-radius for medium screens */
+  }
+
+  .arrival_bg_box2::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+    /* Medium gradient */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .container1 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on larger screens */
+  }
+
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on larger screens */
+  }
+
+  .container2 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on larger screens */
+  }
+
+  .arrival_bg_box1 {
+    border-radius: 8px;
+    /* Default border-radius for larger screens */
+  }
+
+  .arrival_bg_box2::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    /* Default gradient */
+  }
+}
+
+/* Optional: Adjustments for extra large screens */
+@media (min-width: 992px) {
+  .container1 {
+    flex: 1 1 calc(33.33% - 15px);
+    /* Three containers per row on extra large screens */
+  }
+
+  .container3 {
+    flex: 1 1 calc(33.33% - 15px);
+    /* Three containers per row on extra large screens */
+  }
+
+  .container2 {
+    flex: 1 1 calc(33.33% - 15px);
+    /* Three containers per row on extra large screens */
+  }
+
+  .arrival_bg_box2 {
+    border-radius: 10px;
+    /* Larger border-radius for extra large screens */
+  }
+
+  .arrival_bg_box2::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+    /* Lighter gradient */
+  }
+}
+
+.section-background {
+  background-color: #e61212;
+  /* Replace with your desired color */
+}
+
+
+.col-md-4 {
+  flex: 1 1 100%;
+  /* Full width for columns on small screens */
+  max-width: 100%;
+}
+
+.col-md-8 {
+  flex: 1 1 100%;
+  /* Full width for columns on small screens */
+  max-width: 100%;
+}
+
+.text-area {
+  padding: 15px;
+  /* Reduced padding for smaller screens */
+  width: 100%;
+}
+
+.rich-text {
+  font-size: 20px;
+  /* Smaller font size for small screens */
+  width: 100%;
+  margin-left: 0;
+}
+
+.heading4 {
+  font-size: 24px !important;
+  /* Adjust font size for smaller screens */
+  width: 100%;
+  text-align: start;
+  margin-left: 0;
+}
+
+.heading6 {
+  font-size: 28px !important;
+  /* Adjust font size for smaller screens */
+  width: 100%;
+  text-align: start;
+  margin-left: 0;
+}
+
+.heading7 {
+  font-size: 28px !important;
+  /* Adjust font size for smaller screens */
+  width: 100%;
+  text-align: start;
+  margin-left: 0;
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container1 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on medium screens */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    /* Medium shadow on medium screens */
+  }
+
+  .container3 {
+    flex: 1 1 calc(50% - 15px);
+    /* Two containers per row on medium screens */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    /* Medium shadow on medium screens */
+  }
+
+  .col-md-4 {
+    flex: 1 1 50%;
+    /* Two columns per row on medium screens */
+  }
+
+  .col-md-8 {
+    flex: 1 1 50%;
+    /* Two columns per row on medium screens */
+  }
+
+  .text-area {
+    padding: 20px;
+    /* Default padding for medium screens */
+  }
+
+  .rich-text {
+    font-size: 24px;
+    /* Adjust font size for medium screens */
+  }
+
+  .heading4 {
+    font-size: 28px;
+    width: 100% !important;
+    /* Adjust font size for medium screens */
+  }
+
+  .heading6 {
+    font-size: 28px;
+    width: 100% !important;
+    /* Adjust font size for medium screens */
+  }
+
+  .heading7 {
+    font-size: 25px !important;
+    width: 100% !important;
+    /* Adjust font size for medium screens */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 768px) {
+  .container1 {
+    flex: 1 1 calc(33.333% - 15px);
+    /* Three containers per row on large screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+
+  .container3 {
+    flex: 1 1 calc(33.333% - 15px);
+    /* Three containers per row on large screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+  }
+
+  .col-md-4 {
+    flex: 1 1 33.333%;
+    /* Three columns per row on large screens */
+  }
+
+  .col-md-8 {
+    flex: 1 1 33.333%;
+    /* Three columns per row on large screens */
+  }
+
+  .text-area {
+    padding: 25px;
+    /* Increased padding for larger screens */
+  }
+
+  .rich-text {
+    font-size: 28px;
+    /* Larger font size for larger screens */
+  }
+
+  .heading4 {
+    font-size: 32px;
+    /* Larger font size for larger screens */
+  }
+
+  .heading6 {
+    font-size: 32px;
+    /* Larger font size for larger screens */
+  }
+
+  .heading7 {
+    font-size: 2px;
+    /* Larger font size for larger screens */
+  }
+}
+
+/* Optional: Adjustments for extra large screens */
+@media (min-width: 992px) {
+  .container1 {
+    flex: 1 1 calc(33.333% - 15px);
+    /* Three containers per row on extra large screens */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    /* Stronger shadow for extra large screens */
+  }
+
+  .container3 {
+    flex: 1 1 calc(33.333% - 15px);
+    /* Three containers per row on extra large screens */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    /* Stronger shadow for extra large screens */
+  }
+
+  .text-area {
+    padding: 30px;
+    /* Further increase padding for extra large screens */
+  }
+
+  .rich-text {
+    font-size: 30px;
+    /* Larger font size for extra large screens */
+  }
+
+  .heading4 {
+    font-size: 35px;
+    /* Larger font size for extra large screens */
+  }
+
+  .heading6 {
+    font-size: 35px;
+    /* Larger font size for extra large screens */
+  }
+
+  .heading7 {
+    font-size: 35px;
+    /* Larger font size for extra large screens */
+  }
+}
+
+
+
+
+
+.fa-location-dot {
+  margin-top: 5px;
+}
+
+.fa-hands-praying {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .slidetext {
+    font-size: 2.5rem !important;
+    /* Adjust font size for smaller screens */
+  }
+
+  .slidetext1 {
+    font-size: 1.2rem !important;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .slidetext {
+    font-size: 2.5rem !important;
+    /* Further adjust font size for even smaller screens */
+  }
+
+  .slidetext1 {
+    font-size: 1.0rem !important;
+    /* Further adjust font size for even smaller screens */
+  }
+}
+
+/* General Styles */
+.container {
+  max-width: 1200px;
+  /* Set max-width for larger screens */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Flex container for the row */
+.row {
+  display: flex;
+  align-items: stretch;
+  /* Make columns equal height */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    /* Full width on tablets and small desktops */
+    margin-left: 15px;
+    max-width: 100%;
+    margin-top: 40px;
+    /* Limit maximum width to 100% */
+    min-height: 200px;
+    /* Adjust minimum height for smaller screens */
+  }
+}
+
+/* Responsive adjustments for very small screens (phones) */
+@media (max-width: 576px) {
+  .col-md-6 {
+    min-height: 100px;
+    /* Further adjust minimum height for very small screens */
+    margin-left: 15px;
+  }
+}
+
+
+
+
+.col-md-7 {
+  flex: 0 0 50%;
+  /* Default width on medium screens and larger */
+  max-width: 100%;
+  /* Limit maximum width */
+  padding: 0;
+  /* Remove padding if needed */
+  display: flex;
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+}
+
+/* Default styles for .col-md-4 */
+.col-md-4 {
+  flex: 0 0 100%;
+  /* Full width on smaller screens */
+  max-width: 100%;
+  /* Ensure it doesn’t exceed container width */
+  margin: auto;
+  margin-top: -40px;
+  min-height: 250px;
+  /* Minimum height to ensure content fits */
+  max-height: 500px;
+  /* Maximum height to limit container height */
+  box-shadow: #000;
+  padding: 0;
+  /* Remove padding */
+  display: flex;
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and small desktops (min-width: 600px) */
+@media (min-width: 600px) {
+  .col-md-4 {
+    width: 50%;
+    /* Full width on mobile view */
+    max-width: 100%;
+    /* Ensure full width on mobile */
+    padding: 10px;
+  }
+
+  @media (min-width: 576px) {
+    .col-md-4 {
+      width: 50%;
+      /* Full width on mobile view */
+      max-width: 100%;
+      /* Ensure full width on mobile */
+      padding: 10px;
+    }
+
+
+    /* For large desktops (min-width: 1024px) */
+    @media (min-width: 1024px) {
+      .col-md-4 {
+        width: 50%;
+        /* Full width on mobile view */
+        max-width: 50%;
+        /* Ensure full width on mobile */
+        padding: 10px;
+      }
+
+      .col-md-5 {
+        width: 50%;
+        /* Full width on mobile view */
+        max-width: 100%;
+        /* Ensure full width on mobile */
+        padding: 10px;
+      }
+    }
+
+    /* Default styles for .col-md-4 */
+    .col-md-8 {
+      flex: 0 0 100%;
+      /* Full width on smaller screens */
+      max-width: 100%;
+      /* Ensure it doesn’t exceed container width */
+      margin: auto;
+      margin-top: -0px;
+      min-height: 250px;
+
+      /* Minimum height to ensure content fits */
+      max-height: 500px;
+      /* Maximum height to limit container height */
+      box-shadow: #000;
+      background-color: #000;
+      padding: 0;
+      /* Remove padding */
+      display: flex;
+      align-items: center;
+      /* Center content vertically */
+      justify-content: center;
+      /* Center content horizontally */
+    }
+
+    /* Media queries for responsiveness */
+
+    /* For tablets and small desktops (min-width: 600px) */
+    @media (min-width: 600px) {
+      .col-md-8 {
+        width: 50%;
+        /* Full width on mobile view */
+        max-width: 100%;
+        /* Ensure full width on mobile */
+        padding: 10px;
+      }
+
+      @media (min-width: 576px) {
+        .col-md-8 {
+          width: 50%;
+          /* Full width on mobile view */
+          max-width: 100%;
+          /* Ensure full width on mobile */
+          padding: 10px;
+        }
+
+
+        /* For large desktops (min-width: 1024px) */
+        @media (min-width: 1024px) {
+          .col-md-8 {
+            width: 50%;
+            /* Full width on mobile view */
+            max-width: 50%;
+            /* Ensure full width on mobile */
+            padding: 10px;
+          }
+
+
+          /* Styling for the text-area */
+          .text-area {
+            display: flex;
+            flex-direction: column;
+            /* Stack text elements vertically */
+            align-items: center;
+            min-height: 100px;
+            /* Minimum height to ensure content fits */
+            max-height: 200px;
+            /* Maximum height to limit container height */
+            /* Center horizontally */
+            text-align: center;
+            /* Center text inside */
+            background: #ffffff;
+            /* Background color */
+            color: #000000;
+            /* Changed to a more readable color */
+            /* Text color */
+            padding: 20px;
+            /* Adjusted padding for better spacing */
+            /* Padding inside the block */
+            max-width: 100%;
+            /* Ensure it doesn’t exceed container width */
+            width: 100%;
+            /* Full width of its parent */
+            box-sizing: border-box;
+            /* Include padding and border in the width */
+
+          }
+
+          /* Adjustments for small screens */
+          @media (max-width: 575.98px) {
+            .text-area {
+              padding: 15px;
+              /* Reduced padding for smaller screens */
+
+            }
+          }
+
+          /* Adjustments for medium screens */
+          @media (min-width: 576px) and (max-width: 767.98px) {
+            .text-area {
+              padding: 20px;
+              /* Default padding for medium screens */
+            }
+          }
+
+          /* Adjustments for large screens */
+          @media (min-width: 768px) {
+            .text-area {
+              padding: 25px;
+              /* Increase padding for larger screens */
+            }
+          }
+
+          /* Optional: Adjustments for extra large screens if needed */
+          @media (min-width: 992px) {
+            .text-area {
+              padding: 30px;
+              /* Further increase padding for extra large screens */
+            }
+          }
+
+          /* Styling for the text-area */
+          .text-area6 {
+            display: flex;
+            flex-direction: column;
+            /* Stack text elements vertically */
+            align-items: center;
+            min-height: 100px;
+            /* Minimum height to ensure content fits */
+            /* Center horizontally */
+            text-align: center;
+            /* Center text inside */
+            background: none;
+            /* Background color */
+            color: #000000;
+            /* Changed to a more readable color */
+            /* Text color */
+            padding: 20px;
+            /* Adjusted padding for better spacing */
+            /* Padding inside the block */
+            max-width: 100%;
+            /* Ensure it doesn’t exceed container width */
+            width: 100%;
+            /* Full width of its parent */
+            box-sizing: border-box;
+            /* Include padding and border in the width */
+
+          }
+
+          /* Adjustments for small screens */
+          @media (max-width: 575.98px) {
+            .text-area6 {
+              padding: 15px;
+              /* Reduced padding for smaller screens */
+
+            }
+          }
+
+          /* Adjustments for medium screens */
+          @media (min-width: 476px) and (max-width: 767.98px) {
+            .text-area6 {
+              padding: 20px;
+              /* Default padding for medium screens */
+            }
+          }
+
+          /* Adjustments for large screens */
+          @media (min-width: 768px) {
+            .text-area6 {
+              padding: 25px;
+              margin-top: 30px !important;
+              /* Increase padding for larger screens */
+            }
+          }
+
+          /* Optional: Adjustments for extra large screens if needed */
+          @media (min-width: 992px) {
+            .text-area6 {
+              padding: 30px;
+              /* Further increase padding for extra large screens */
+            }
+          }
+
+          .button-text {
+            color: #000;
+          }
+
+          .heading {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            /* Adjust color as needed */
+          }
+
+          .rich-text {
+            font-size: 1em;
+            color: #6b6b6b;
+            /* Adjust color as needed */
+            margin-bottom: 20px;
+          }
+
+          .rich-text4 {
+            background-color: rgb(219, 106, 0);
+            /* Optional: Background color for contrast */
+            border-radius: 8px;
+            /* Optional: Rounded corners */
+            width: 100%;
+            color: white !important;
+            /* Full width of its parent */
+            max-width: 100%;
+            /* Ensure it fits within the viewport */
+            padding: 15px;
+            /* Padding inside the block */
+            box-sizing: border-box;
+            /* Include padding and border in the width */
+            margin: 0;
+            /* Reset margin if needed */
+          }
+
+          /* Adjustments for small screens */
+          @media (max-width: 575.98px) {
+            .rich-text4 {
+              padding: 10px;
+              /* Adjust padding for smaller screens */
+            }
+          }
+
+          /* Adjustments for medium screens */
+          @media (min-width: 576px) {
+            .rich-text4 {
+              padding: 15px;
+              /* Default padding for medium screens and up */
+            }
+          }
+
+          /* Additional styles for larger screens can be added if needed */
+
+
+
+          .button-group-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .button-item-listing,
+          .btn-box {
+            margin-bottom: 10px;
+          }
+
+          .btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+          }
+
+          .btn-primary:hover {
+            background-color: #0056b3;
+          }
+
+          /* Responsive Styles */
+          @media (max-width: 992px) {
+            .col-md-6 {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+
+            .heading {
+              font-size: 1.5em;
+            }
+
+            .rich-text {
+              font-size: 0.9em;
+            }
+
+            .button-group-wrapper {
+              align-items: center;
+            }
+          }
+
+          @media (max-width: 576px) {
+            .heading {
+              font-size: 1.2em;
+            }
+
+            .rich-text {
+              font-size: 0.8em;
+            }
+
+            .btn-primary,
+            .btn1 {
+              padding: 8px 16px;
+              font-size: 0.9em;
+            }
+
+            .button-group-wrapper {
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

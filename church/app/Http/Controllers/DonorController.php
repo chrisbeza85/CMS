@@ -12,12 +12,12 @@ class DonorController extends Controller
     public function index()
     {
         $donors = Donor::all();
-        return view('donors.index', compact('donors'));
+        return view('admin.donors.index', compact('donors'));
     }
 
     public function create()
     {
-        return view('donors.create');
+        return view('admin.donors.create');
     }
 
     public function store(Request $request)
@@ -32,19 +32,19 @@ class DonorController extends Controller
         ]);
 
         Donor::create($validatedData);
-        return redirect()->route('donors.index')->with('success', 'Donor created successfully.');
+        return redirect()->route('admin.show_donors')->with('success', 'Donor created successfully.');
     }
 
     public function show($id)
     {
         $donor = Donor::findOrFail($id);
-        return view('donors.show', compact('donor'));
+        return view('admin.donors.show', compact('donor'));
     }
 
     public function edit($id)
     {
         $donor = Donor::findOrFail($id);
-        return view('donors.edit', compact('donor'));
+        return view('admin.donors.edit', compact('donor'));
     }
 
     public function update(Request $request, $id)
@@ -60,13 +60,13 @@ class DonorController extends Controller
 
         $donor = Donor::findOrFail($id);
         $donor->update($validatedData);
-        return redirect()->route('donors.index')->with('success', 'Donor updated successfully.');
+        return redirect()->route('admin.show_donors')->with('success', 'Donor updated successfully.');
     }
 
     public function destroy($id)
     {
         $donor = Donor::findOrFail($id);
         $donor->delete();
-        return redirect()->route('donors.index')->with('success', 'Donor deleted successfully.');
+        return redirect()->route('admin.show_donors')->with('success', 'Donor deleted successfully.');
     }
 }
